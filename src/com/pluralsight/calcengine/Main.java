@@ -4,10 +4,19 @@ public class Main {
 
     public static void main(String[] args) {
 
-//    	MathsEquation testEquation = new MathsEquation();
-//    	testEquation.execute();
-//    	System.out.print("test=");
-//    	System.out.println(testEquation.getResult());
+
+    	String[] statements = {
+    			"divide 100.0 50.0",
+				"add 25.0 92.0",
+				"subtract 225.0 17.0",
+				"multiply 11.0 3.0"
+		};
+
+    	CalculateHelper helper = new CalculateHelper();
+		for (String statement:statements) {
+			helper.process(statement);
+			System.out.println(helper);
+		}
 
 		MathsEquation[] equations = new MathsEquation[4];
 		equations[0] = new MathsEquation('d', 00.0d, 50.0d);

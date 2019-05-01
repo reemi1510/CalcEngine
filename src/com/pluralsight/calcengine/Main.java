@@ -20,6 +20,20 @@ public class Main {
 			System.out.print("result = ");
 			System.out.println(equation.getResult());
 		}
+
+		System.out.println();
+		System.out.println("Using overloads");
+		System.out.println();
+
+		double leftDouble = 9.0d;
+		double rightDouble = 4.0d;
+
+		MathsEquation equationOverload = new MathsEquation('d');
+
+		equationOverload.execute(leftDouble, rightDouble);
+
+		System.out.print("Result= ");
+		System.out.println(equationOverload.getResult());
     }
 
 //    public static MathsEquation create(double leftVal, double rightVal, char opCode) {

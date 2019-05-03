@@ -19,12 +19,18 @@ public class Main {
 
 		String[] statements = {
 				"add 25.0 92.0",
-				"power 5.0 2.0"
+				"power 5.0 2.0",
+				"subtract 30.0 705.0",
+				"multiply 5.0 11.0",
+				"divide 120.0 6.0"
 		};
 
 		DynamicHelper helper = new DynamicHelper(new MathsProcessing[] {
 				new Adder(),
-				new PowerOf()
+				new PowerOf(),
+				new Subtractor(),
+				new Multiplier(),
+				new Divider()
 		});
 
 		for (String statement:statements) {
